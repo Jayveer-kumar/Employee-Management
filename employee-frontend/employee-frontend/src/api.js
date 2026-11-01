@@ -1,4 +1,4 @@
-const BASE = "http://localhost:8080/api/employees";
+const BASE = "https://employee-management-1-gjm1.onrender.com/api/employees";
 
 async function request(url, options) {
   const res = await fetch(url, {
