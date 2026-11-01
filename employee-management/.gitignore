@@ -37,5 +37,11 @@ build/
 .env.*
 !.env.example
 
-# node_modules
-node_modules/
+# pehle dekho node_modules git me kis path par hai
+git ls-files | grep node_modules | head -3
+
+# upar jo path dikhe, uska node_modules folder hatao (yahan path badal lena)
+git rm -r --cached employee-frontend/employee-frontend/node_modules
+
+# .gitignore banao aur commit karo
+printf "node_modules\ndist\n" > employee-frontend/employee-frontend/.gitignore
