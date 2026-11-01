@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 // import java.util.List;
 
-@CrossOrigin (origins = "http://localhost:5173")
+@CrossOrigin (origins = "https://employee-management-neon-seven.vercel.app")
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
